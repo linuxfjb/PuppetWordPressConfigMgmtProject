@@ -5,7 +5,6 @@
 #    lab specific to Simplilearn.
 # 2. Creates a wordpress.conf file for initializing Apache web server.
 # 3. Creates wp-config.php file. Note that this script will ask create a wordpress user and password.
-# 4. 
 
 #NOTE: This script is not secure, don't leave this script on your server! Use at your own risk. :D
 # Be aware that most of this script runs as a normal user.
@@ -237,7 +236,7 @@ read createMySQLFile
 if [ $createMySQLFile = 'y' -o $createMySQLFile = 'Y' ]
 then
 
-  if [ $wordpress_password = '']
+  if [ -n "$wordpress_password" ]
   then
     echo "What is the password for the wordpress DB user?"
     read wordpress_password
@@ -271,4 +270,4 @@ then
 fi
 
 echo "Done."
-exit 0
+exit 
