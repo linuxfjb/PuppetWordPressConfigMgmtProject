@@ -1,0 +1,1589 @@
+%!PS-Adobe-3.0
+%%Title: puppetServerInstall.sh
+%%For: ubuntu
+%%Creator: VIM - Vi IMproved 8.1 (2018 May 18)
+%%CreationDate: Sat Nov 06 19:24:40 2021
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 59 49 564 800
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate color
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: A4
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/share/vim/vim81/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/share/vim/vim81/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+595 842 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(puppetServerInstall.sh                                                        Page 1)59.5 792.4 ms
+0 0.498 0.498 r
+(#!/bin/sh)59.5 772.4 ms
+(#puppetServerInstall.sh)59.5 762.4 ms
+(# 1. Installs a puppet server installation on unbuntu OS. There is an optional check)59.5 742.4 ms
+( for K8s that is)59.5 732.4 ms
+(#    lab specific to Simplilearn.)59.5 722.4 ms
+(# 2. Creates a wordpress.conf file for initializing Apache web server.)59.5 712.4 ms
+(# 3. Creates wp-config.php file. Note that this script will ask create a wordpress u)59.5 702.4 ms
+(ser and password.)59.5 692.4 ms
+(#NOTE: This script is not secure, don't leave this script on your server! Use at you)59.5 672.4 ms
+(r own risk. :D)59.5 662.4 ms
+(# Be aware that most of this script runs as a normal user.)59.5 652.4 ms
+(# There will be instructions to switch to root when certifications are being set up )59.5 642.4 ms
+(using)59.5 632.4 ms
+(# puppetserver command.)59.5 622.4 ms
+0.498 0.498 0 r
+(echo)59.5 602.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Do you want to set up host and client entries in /etc/hosts?)s
+0.498 0.498 0 r
+(")s
+(read)59.5 592.4 ms
+F0 sf
+0 g
+( yesNo)s
+F1 sf
+0.498 0.498 0 r
+(if [)59.5 572.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 562.4 ms
+F0 sf
+0 g
+(  )59.5 552.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Enter ip address of client1: )s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 542.4 ms
+F1 sf
+0.498 0.498 0 r
+(read)s
+F0 sf
+0 g
+( ipAddr)s
+(  )59.5 522.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Setting up hosts...)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  sudo hostnamectl )59.5 512.4 ms
+F1 sf
+0.498 0.498 0 r
+(set)s
+0 0.498 0.498 r
+(-hostname puppetserver.ec2.internal)s
+F0 sf
+0 g
+(  sudo )59.5 502.4 ms
+F1 sf
+0.498 0.498 0 r
+(--)s
+F0 sf
+0 g
+( sh )s
+F1 sf
+0.498 0.498 0 r
+(-c)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(echo ')s
+0 0 0.498 r
+($\()s
+0.498 0 0 r
+(hostname -i)s
+0.498 0.498 0 r
+(|)s
+0.498 0 0 r
+( cut -d)s
+0.498 0.498 0 r
+(')s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(')s
+0.498 0 0 r
+( -f1)s
+0 0 0.498 r
+(\))s
+0.498 0 0.498 r
+( puppetserver.ec2.internal puppe)s
+(t' >> /etc/hosts)59.5 492.4 ms
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  sudo )59.5 482.4 ms
+F1 sf
+0.498 0.498 0 r
+(--)s
+F0 sf
+0 g
+( sh )s
+F1 sf
+0.498 0.498 0 r
+(-c)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(echo ')s
+0 0 0.498 r
+($ipAddr)s
+0.498 0 0.498 r
+( client1.ec2.internal' >> /etc/hosts)s
+0.498 0.498 0 r
+(")s
+(fi)59.5 472.4 ms
+(echo)59.5 452.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Do you want to download and install puppetserver?)s
+0.498 0.498 0 r
+(")s
+(read)59.5 442.4 ms
+F0 sf
+0 g
+( yesNo)s
+F1 sf
+0.498 0.498 0 r
+(if [)59.5 422.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 412.4 ms
+F0 sf
+0 g
+(  )59.5 402.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Puppetserver install...)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  curl )59.5 392.4 ms
+F1 sf
+0.498 0.498 0 r
+(-O)s
+F0 sf
+0 g
+( https://apt.puppetlabs.com/puppet7-release-xenial.deb)s
+(  sudo dpkg )59.5 382.4 ms
+F1 sf
+0.498 0.498 0 r
+(-i)s
+F0 sf
+0 g
+( puppet7-release-xenial.deb)s
+(  sudo apt-get update)59.5 372.4 ms
+(  sudo apt-get )59.5 352.4 ms
+F1 sf
+0.498 0.498 0 r
+(-y)s
+F0 sf
+0 g
+( install puppetserver)s
+F1 sf
+0.498 0.498 0 r
+(fi)59.5 342.4 ms
+(echo)59.5 322.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Is this K8s and need to clean up the lab?)s
+0.498 0.498 0 r
+(")s
+(read)59.5 312.4 ms
+F0 sf
+0 g
+( yesNo)s
+F1 sf
+0.498 0.498 0 r
+(if [)59.5 292.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 282.4 ms
+F0 sf
+0 g
+(  )59.5 272.4 ms
+F1 sf
+0 0.498 0.498 r
+(#--)s
+F0 sf
+0 g
+(  )59.5 262.4 ms
+F1 sf
+0 0.498 0.498 r
+(#FOR k8s issues)s
+F0 sf
+0 g
+(  )59.5 252.4 ms
+F1 sf
+0 0.498 0.498 r
+(#---)s
+F0 sf
+0 g
+(  sudo apt-get update )59.5 242.4 ms
+F1 sf
+0.498 0 0 r
+(--fix-missing)s
+F0 sf
+0 g
+(  sudo apt-get remove puppet-agent puppet-master puppet  puppetserver puppet-agent)59.5 232.4 ms
+(  sudo apt )59.5 222.4 ms
+F1 sf
+0.498 0 0 r
+(--fix-broken)s
+F0 sf
+0 g
+( install)s
+(  sudo apt clean)59.5 212.4 ms
+(  sudo )59.5 202.4 ms
+F1 sf
+0.498 0.498 0 r
+(rm)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0 r
+(-rf)s
+F0 sf
+0 g
+( /tmp/*)s
+(  sudo apt install puppetserver)59.5 192.4 ms
+F1 sf
+0.498 0.498 0 r
+(fi)59.5 182.4 ms
+(echo)59.5 162.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Do you want to set up java vm 512m line \(Simplilearn AMI labs\)?)s
+0.498 0.498 0 r
+(")s
+(read)59.5 152.4 ms
+F0 sf
+0 g
+( yesNo)s
+F1 sf
+0.498 0.498 0 r
+(if [)59.5 132.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 122.4 ms
+F0 sf
+0 g
+(  )59.5 112.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Java vm memory adjustment...)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 102.4 ms
+F1 sf
+0 0.498 0.498 r
+(###### JAVA 512M BEGIN #########)s
+F0 sf
+0 g
+(  )59.5 92.4 ms
+F1 sf
+0.498 0.498 0 r
+(sed)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-E)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(s/\(JAVA_ARGS=)s
+0.498 0 0 r
+(\\")s
+0.498 0 0.498 r
+(-Xms\)\()s
+0.498 0 0 r
+(\\w)s
+0.498 0 0.498 r
+(+\)\( -Xmx\)\()s
+0.498 0 0 r
+(\\w)s
+0.498 0 0.498 r
+(+\)/JAVA_ARGS=)s
+0.498 0 0 r
+(\\")s
+0.498 0 0.498 r
+(-Xms512m -Xmx512m/g)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+( /et)s
+(c/default/puppetserver )59.5 82.4 ms
+F1 sf
+0.498 0.498 0 r
+(>)s
+F0 sf
+0 g
+( tempPuppetServer.txt)s
+(  sudo )59.5 72.4 ms
+F1 sf
+0.498 0.498 0 r
+(mv)s
+F0 sf
+0 g
+( tempPuppetServer.txt /etc/default/puppetserver)s
+(  )59.5 62.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Note: you can try using the automated sed method but double check the file for c)s
+(orrectness!)59.5 52.4 ms
+re sp
+%%PageTrailer
+%%Page: 2 2
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(puppetServerInstall.sh                                                        Page 2)59.5 792.4 ms
+F0 sf
+(  )59.5 772.4 ms
+F1 sf
+0 0.498 0.498 r
+(# -OR- manually edit:)s
+F0 sf
+0 g
+(  )59.5 762.4 ms
+F1 sf
+0 0.498 0.498 r
+(#     /etc/default/puppetserver)s
+F0 sf
+0 g
+(  )59.5 752.4 ms
+F1 sf
+0 0.498 0.498 r
+(# change the JAVA_ARGS variable to:)s
+F0 sf
+0 g
+(  )59.5 742.4 ms
+F1 sf
+0 0.498 0.498 r
+(# change JAVA_ARGS="-Xms512m -Xmx512m)s
+F0 sf
+0 g
+(  )59.5 732.4 ms
+F1 sf
+0 0.498 0.498 r
+(###### JAVA 512M END   #########)s
+0.498 0.498 0 r
+(fi)59.5 722.4 ms
+(echo)59.5 702.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Do you want to \(re\)start puppetserver?)s
+0.498 0.498 0 r
+(")s
+(read)59.5 692.4 ms
+F0 sf
+0 g
+( yesNo)s
+F1 sf
+0.498 0.498 0 r
+(if [)59.5 672.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($yesNo)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 662.4 ms
+F0 sf
+0 g
+(  )59.5 652.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Starting puppetserver...)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  sudo systemctl restart puppetserver)59.5 642.4 ms
+F1 sf
+0.498 0.498 0 r
+(fi)59.5 632.4 ms
+(echo)59.5 612.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Do you want to wipe out previous certs and recreate? \(y/n\))s
+0.498 0.498 0 r
+(")s
+(read)59.5 602.4 ms
+F0 sf
+0 g
+( certFlg)s
+F1 sf
+0.498 0.498 0 r
+(if [)59.5 582.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($certFlg)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($certFlg)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 572.4 ms
+F0 sf
+0 g
+(  )59.5 562.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(setting up puppetserver certs...)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  sudo )59.5 542.4 ms
+F1 sf
+0.498 0.498 0 r
+(rm)s
+F0 sf
+0 g
+( /etc/puppetlabs/puppetserver/ca )s
+F1 sf
+0.498 0 0 r
+(-rvf)s
+F0 sf
+0 g
+(  sudo )59.5 532.4 ms
+F1 sf
+0.498 0.498 0 r
+(rm)s
+F0 sf
+0 g
+( /etc/puppetlabs/puppet/ssl )s
+F1 sf
+0.498 0 0 r
+(-rvf)s
+F0 sf
+0 g
+(  )59.5 512.4 ms
+F1 sf
+0.498 0.498 0 r
+(set)s
+0 0.498 0.498 r
+( certMessageShow)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+0.498 0.498 0 r
+(else)59.5 502.4 ms
+F0 sf
+0 g
+(  )59.5 492.4 ms
+F1 sf
+0.498 0.498 0 r
+(set)s
+0 0.498 0.498 r
+( certMessageShow)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('n')s
+F0 sf
+0 g
+(  )59.5 482.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(SKIPPING cert setup...)s
+0.498 0.498 0 r
+(")s
+(fi)59.5 472.4 ms
+(echo)59.5 452.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Create wordpress.conf and wp-config.php files?)s
+0.498 0.498 0 r
+(")s
+(read)59.5 442.4 ms
+F0 sf
+0 g
+( createWordConfigFile)s
+F1 sf
+0.498 0.498 0 r
+(if [)59.5 422.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($createWordConfigFile)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($createWordConfigFile)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 412.4 ms
+F0 sf
+0 g
+(  )59.5 392.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(What is the password for the wordpress DB user?)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 382.4 ms
+F1 sf
+0.498 0.498 0 r
+(read)s
+F0 sf
+0 g
+( wordpress_password)s
+(  )59.5 362.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Creating wordpress config.file on local user dir: wordpress_configfiles...)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 352.4 ms
+F1 sf
+0.498 0.498 0 r
+(mkdir)s
+F0 sf
+0 g
+( wordpress_configfiles)s
+(  )59.5 332.4 ms
+F1 sf
+0.498 0.498 0 r
+(cat)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(<<EOT)s
+0.498 0 0.498 r
+( >> wordpress_configfiles/wordpress.conf)s
+(<VirtualHost *:80>)59.5 322.4 ms
+(    DocumentRoot /srv/www/wordpress)59.5 312.4 ms
+(    <Directory /srv/www/wordpress>)59.5 302.4 ms
+(        Options FollowSymLinks)59.5 292.4 ms
+(        AllowOverride Limit Options FileInfo)59.5 282.4 ms
+(        DirectoryIndex index.php)59.5 272.4 ms
+(        Require all granted)59.5 262.4 ms
+(    </Directory>)59.5 252.4 ms
+(    <Directory /srv/www/wordpress/wp-content>)59.5 242.4 ms
+(        Options FollowSymLinks)59.5 232.4 ms
+(        Require all granted)59.5 222.4 ms
+(    </Directory>)59.5 212.4 ms
+(</VirtualHost>)59.5 202.4 ms
+0.498 0.498 0 r
+(EOT)59.5 192.4 ms
+(cat)59.5 172.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(<<EOT)s
+0.498 0 0.498 r
+( >> wordpress_configfiles/wp-config.php)s
+(<?php)59.5 162.4 ms
+(/**)59.5 152.4 ms
+( * The base configuration for WordPress)59.5 142.4 ms
+( *)59.5 132.4 ms
+( * The wp-config.php creation script uses this file during the installation.)59.5 122.4 ms
+( * You don't have to use the web site, you can copy this file to "wp-config.php")59.5 112.4 ms
+( * and fill in the values.)59.5 102.4 ms
+( *)59.5 92.4 ms
+( * This file contains the following configurations:)59.5 82.4 ms
+( *)59.5 72.4 ms
+( * * MySQL settings)59.5 62.4 ms
+( * * Secret keys)59.5 52.4 ms
+re sp
+%%PageTrailer
+%%Page: 3 3
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(puppetServerInstall.sh                                                        Page 3)59.5 792.4 ms
+0.498 0 0.498 r
+( * * Database table prefix)59.5 772.4 ms
+( * * ABSPATH)59.5 762.4 ms
+( *)59.5 752.4 ms
+(.* @link https://wordpress.org/support/article/editing-wp-config-php/)59.5 742.4 ms
+(.*)59.5 732.4 ms
+(.* @package WordPress)59.5 722.4 ms
+(.*/)59.5 712.4 ms
+(// ** MySQL settings - You can get this info from your web host ** //)59.5 692.4 ms
+(/** The name of the database for WordPress */)59.5 682.4 ms
+(define\( 'DB_NAME', 'wordpress' \);)59.5 672.4 ms
+(/** MySQL database username */)59.5 652.4 ms
+(define\( 'DB_USER', 'wordpress' \);)59.5 642.4 ms
+(/** MySQL database password */)59.5 622.4 ms
+(define\( 'DB_PASSWORD', ')59.5 612.4 ms
+0 0 0.498 r
+($wordpress_password)s
+0.498 0 0.498 r
+(' \);)s
+(/** MySQL hostname */)59.5 582.4 ms
+(define\( 'DB_HOST', 'localhost' \);)59.5 572.4 ms
+(/** Database charset to use in creating database tables. */)59.5 552.4 ms
+(define\( 'DB_CHARSET', 'utf8' \);)59.5 542.4 ms
+(/** The database collate type. Don't change this if in doubt. */)59.5 522.4 ms
+(define\( 'DB_COLLATE', '' \);)59.5 512.4 ms
+(/**#@+)59.5 492.4 ms
+( * Authentication unique keys and salts.)59.5 482.4 ms
+( *)59.5 472.4 ms
+( * Change these to different unique phrases! You can generate these using)59.5 462.4 ms
+( * the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-ke)59.5 452.4 ms
+(y service}.)59.5 442.4 ms
+( *)59.5 432.4 ms
+( * You can change these at any point in time to invalidate all existing cookies.)59.5 422.4 ms
+( * This will force all users to have to log in again.)59.5 412.4 ms
+( *)59.5 402.4 ms
+( * @since 2.6.0)59.5 392.4 ms
+( */)59.5 382.4 ms
+(/* update these values from this web site:)59.5 372.4 ms
+(        https://api.wordpress.org/secret-key/1.1/salt/)59.5 362.4 ms
+( */)59.5 352.4 ms
+(define\( 'AUTH_KEY',         'put your unique phrase here' \);)59.5 342.4 ms
+(define\( 'SECURE_AUTH_KEY',  'put your unique phrase here' \);)59.5 332.4 ms
+(define\( 'LOGGED_IN_KEY',    'put your unique phrase here' \);)59.5 322.4 ms
+(define\( 'NONCE_KEY',        'put your unique phrase here' \);)59.5 312.4 ms
+(define\( 'AUTH_SALT',        'put your unique phrase here' \);)59.5 302.4 ms
+(define\( 'SECURE_AUTH_SALT', 'put your unique phrase here' \);)59.5 292.4 ms
+(define\( 'LOGGED_IN_SALT',   'put your unique phrase here' \);)59.5 282.4 ms
+(define\( 'NONCE_SALT',       'put your unique phrase here' \);)59.5 272.4 ms
+(/**#@-*/)59.5 252.4 ms
+(/**)59.5 232.4 ms
+( * WordPress database table prefix.)59.5 222.4 ms
+( *)59.5 212.4 ms
+( * You can have multiple installations in one database if you give each)59.5 202.4 ms
+( * a unique prefix. Only numbers, letters, and underscores please!)59.5 192.4 ms
+( */)59.5 182.4 ms
+0.498 0 0 r
+(\\$)59.5 172.4 ms
+0.498 0 0.498 r
+(table_prefix = 'wp_';)s
+(/**)59.5 152.4 ms
+( * For developers: WordPress debugging mode.)59.5 142.4 ms
+( *)59.5 132.4 ms
+( * Change this to true to enable the display of notices during development.)59.5 122.4 ms
+( * It is strongly recommended that plugin and theme developers use WP_DEBUG)59.5 112.4 ms
+( * in their development environments.)59.5 102.4 ms
+( *)59.5 92.4 ms
+( * For information on other constants that can be used for debugging,)59.5 82.4 ms
+( * visit the documentation.)59.5 72.4 ms
+( *)59.5 62.4 ms
+( * @link https://wordpress.org/support/article/debugging-in-wordpress/)59.5 52.4 ms
+re sp
+%%PageTrailer
+%%Page: 4 4
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(puppetServerInstall.sh                                                        Page 4)59.5 792.4 ms
+0.498 0 0.498 r
+( */)59.5 772.4 ms
+(define\( 'WP_DEBUG', false \);)59.5 762.4 ms
+(/* Add any custom values between this line and the "stop editing" line. */)59.5 742.4 ms
+(/* That's all, stop editing! Happy publishing. */)59.5 702.4 ms
+(/** Absolute path to the WordPress directory. */)59.5 682.4 ms
+(if \( ! defined\( 'ABSPATH' \) \) {)59.5 672.4 ms
+(        define\( 'ABSPATH', __DIR__ . '/' \);)59.5 662.4 ms
+(})59.5 652.4 ms
+(/** Sets up WordPress vars and included files. */)59.5 632.4 ms
+(require_once ABSPATH . 'wp-settings.php';)59.5 622.4 ms
+0.498 0.498 0 r
+(EOT)59.5 602.4 ms
+(fi)59.5 582.4 ms
+(echo)59.5 562.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Create MYSQL file?)s
+0.498 0.498 0 r
+(")s
+(read)59.5 552.4 ms
+F0 sf
+0 g
+( createMySQLFile)s
+F1 sf
+0.498 0.498 0 r
+(if [)59.5 532.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($createMySQLFile)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($createMySQLFile)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 522.4 ms
+F0 sf
+0 g
+(  )59.5 502.4 ms
+F1 sf
+0.498 0.498 0 r
+(if [)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-n)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(")s
+0 0 0.498 r
+($wordpress_password)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+F0 sf
+0 g
+(  )59.5 492.4 ms
+F1 sf
+0.498 0.498 0 r
+(then)s
+F0 sf
+0 g
+(    )59.5 482.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(What is the password for the wordpress DB user?)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(    )59.5 472.4 ms
+F1 sf
+0.498 0.498 0 r
+(read)s
+F0 sf
+0 g
+( wordpress_password)s
+(  )59.5 462.4 ms
+F1 sf
+0.498 0.498 0 r
+(fi)s
+F0 sf
+0 g
+(    )59.5 442.4 ms
+F1 sf
+0.498 0.498 0 r
+(cat)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(<<EOT)s
+0.498 0 0.498 r
+( >> wordpress_configfiles/wordpressMySQL.sql)s
+(CREATE DATABASE wordpress;)59.5 432.4 ms
+(CREATE USER wordpress@localhost IDENTIFIED BY ')59.5 422.4 ms
+0 0 0.498 r
+($wordpress_password)s
+0.498 0 0.498 r
+(';)s
+(GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER)59.5 412.4 ms
+(    ON wordpress.*)59.5 402.4 ms
+(    TO wordpress@localhost;)59.5 392.4 ms
+(FLUSH PRIVILEGES;)59.5 372.4 ms
+(quit)59.5 362.4 ms
+0.498 0.498 0 r
+(EOT)59.5 352.4 ms
+(fi)59.5 332.4 ms
+(if [)59.5 312.4 ms
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($certFlg)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(-o)s
+F0 sf
+0 g
+( )s
+F1 sf
+0 0 0.498 r
+($certFlg)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(=)s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0 0.498 r
+('Y')s
+F0 sf
+0 g
+( )s
+F1 sf
+0.498 0.498 0 r
+(])s
+(then)59.5 302.4 ms
+F0 sf
+0 g
+(  )59.5 292.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(=======================================================)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 282.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(The rest of the steps *you* must do as root as follows:)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 272.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(=======================================================)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 262.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(sudo -i)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 252.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(/opt/puppetlabs/server/apps/puppetserver/bin/puppetserver ca setup)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 232.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(/opt/puppetlabs/bin/puppetserver ca list --all)s
+0.498 0 0 r
+(\\n)s
+0.498 0.498 0 r
+(")s
+F0 sf
+0 g
+(  )59.5 222.4 ms
+F1 sf
+0 0.498 0.498 r
+(#echo "/opt/puppetlabs/server/apps/puppetserver/bin/puppetserver ca list --all\\n")s
+F0 sf
+0 g
+(  )59.5 202.4 ms
+F1 sf
+0.498 0.498 0 r
+(echo)s
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Give the certs a moment to sync then run above to check out the certs as *ro)s
+(ot*)59.5 192.4 ms
+0.498 0.498 0 r
+(")s
+(fi)59.5 182.4 ms
+(echo)59.5 162.4 ms
+0.498 0 0.498 r
+( )s
+0.498 0.498 0 r
+(")s
+0.498 0 0.498 r
+(Done.)s
+0.498 0.498 0 r
+(")s
+(exit)59.5 152.4 ms
+F0 sf
+0 g
+( )s
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 4
+%%EOF
+

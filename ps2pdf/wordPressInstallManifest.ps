@@ -1,0 +1,1080 @@
+%!PS-Adobe-3.0
+%%Title: wordPressInstall.pp
+%%For: ubuntu
+%%Creator: VIM - Vi IMproved 8.1 (2018 May 18)
+%%CreationDate: Sat Nov 06 19:26:04 2021
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 59 49 564 800
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate color
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: A4
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/share/vim/vim81/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/share/vim/vim81/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+595 842 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(wordPressInstall.pp                                                           Page 1)59.5 792.4 ms
+0 0.498 0.498 r
+(# Puppet Site Manifest: wordPressInstall.pp)59.5 772.4 ms
+(#)59.5 762.4 ms
+(# Manifest installation instructions:)59.5 752.4 ms
+(# 1. Copy this file to directory: /etc/puppetlabs/code/environments/production/manif)59.5 742.4 ms
+(ests/)59.5 732.4 ms
+(# 2. Installs complete WordPress installation to specified nodes.)59.5 722.4 ms
+(# 3. Run:)59.5 712.4 ms
+(#      puppet apply /etc/puppetlabs/code/environments/production/manifests/wordPress)59.5 702.4 ms
+(Install.pp)59.5 692.4 ms
+(#)59.5 682.4 ms
+(#########################################################################)59.5 672.4 ms
+(## PREINSTALLATION STEPS AND CONSIDERATIONS BEFORE SETTING UP THE NODE ##)59.5 662.4 ms
+(#########################################################################)59.5 652.4 ms
+(#)59.5 642.4 ms
+(# 1. Consider using puppetServerInstall.sh)59.5 632.4 ms
+(#    The puppetServerInstall.sh script creates the files listed in section 3. PREREQ)59.5 622.4 ms
+( SERVER FILES:)59.5 612.4 ms
+(#    https://github.com/linuxfjb/PuppetWordPressConfigMgmtProject/blob/main/puppetSe)59.5 602.4 ms
+(rverInstall.sh)59.5 592.4 ms
+(#)59.5 582.4 ms
+(# 2. Consider editing or changing the default MySQL password in this script.)59.5 572.4 ms
+(#    VERY IMPORTANT: It is recommended to change this after installation.)59.5 562.4 ms
+(#)59.5 552.4 ms
+(# 3. PREREQ SERVER FILES - FMI check out: https://github.com/linuxfjb/PuppetWordPres)59.5 542.4 ms
+(sConfigMgmtProject)59.5 532.4 ms
+(#    1. Apache server set up: wordpress.conf)59.5 522.4 ms
+(#      server:            /home/ubuntu/wordpress_configfiles/wordpress.conf)59.5 512.4 ms
+(#      node destination:  /etc/apache2/sites-available/wordpress.conf)59.5 502.4 ms
+(#)59.5 492.4 ms
+(#    2. WordPress config vars and settings: wp-config.php)59.5 482.4 ms
+(#      server:            /home/ubuntu/wordpress_configfiles/wp-config.php)59.5 472.4 ms
+(#      node destination:  /srv/www/wp-config.php)59.5 462.4 ms
+(# )59.5 452.4 ms
+(#    3. WordPress db creation and db user setup script: wordpressMySQL.sql)59.5 442.4 ms
+(#      server:           /home/ubuntu/wordpress_configfiles/wordpressMySQL.sql)59.5 432.4 ms
+(#      node:  MySQL DB: wordpress)59.5 422.4 ms
+(#)59.5 412.4 ms
+(#    4. Edit the wp-config.php file.)59.5 402.4 ms
+(#       Go to https://api.wordpress.org/secret-key/1.1/salt/ and copy encrypted vari)59.5 392.4 ms
+(ables)59.5 382.4 ms
+(#       into the authentication variables section AUTH_KEY, SECURE_AUTH_KEY, NONCE_K)59.5 372.4 ms
+(EY, etc...)59.5 362.4 ms
+(#)59.5 352.4 ms
+(#    5. After installation:)59.5 342.4 ms
+(#       a. Consider changing the default MySQL password on the node.)59.5 332.4 ms
+(#       b. Consider changing the password to the wordpress DB User.)59.5 322.4 ms
+(#       c. Consider removing the /root/wordpressMySQL.sql installation file or at le)59.5 312.4 ms
+(ast scrub)59.5 302.4 ms
+(#          the password. This could be automated in this manifest.)59.5 292.4 ms
+(#)59.5 282.4 ms
+(##############################)59.5 272.4 ms
+(### MYSQL DEFAULT PASSWORD ###)59.5 262.4 ms
+(##############################)59.5 252.4 ms
+F0 sf
+0 g
+(class base::wputil_configvars {)59.5 242.4 ms
+(  $mysql_password = )59.5 232.4 ms
+F1 sf
+0.498 0 0.498 r
+('mypass')s
+F0 sf
+0 g
+(})59.5 222.4 ms
+(class base::apache_running {)59.5 202.4 ms
+(  package { )59.5 192.4 ms
+F1 sf
+0.498 0 0.498 r
+('apache2')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 182.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 172.4 ms
+(  service { )59.5 152.4 ms
+F1 sf
+0.498 0 0.498 r
+('apache2')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 142.4 ms
+F1 sf
+0.498 0 0.498 r
+('running')s
+F0 sf
+0 g
+(,)s
+(    enable => )59.5 132.4 ms
+F1 sf
+0.498 0 0.498 r
+('true')s
+F0 sf
+0 g
+(  })59.5 122.4 ms
+(})59.5 112.4 ms
+(class base::wputil_webpackage {)59.5 92.4 ms
+(  package {)59.5 72.4 ms
+F1 sf
+0.498 0 0.498 r
+('libapache2-mod-php')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 62.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 52.4 ms
+re sp
+%%PageTrailer
+%%Page: 2 2
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(wordPressInstall.pp                                                           Page 2)59.5 792.4 ms
+F0 sf
+(  package {)59.5 762.4 ms
+F1 sf
+0.498 0 0.498 r
+('php')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 752.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 742.4 ms
+(  package {)59.5 722.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-bcmath')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 712.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 702.4 ms
+(  package {)59.5 682.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-curl')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 672.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 662.4 ms
+(  package {)59.5 642.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-imagick')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 632.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 622.4 ms
+(  package {)59.5 602.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-intl')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 592.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 582.4 ms
+(  package {)59.5 562.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-json')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 552.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 542.4 ms
+(  package {)59.5 522.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-mbstring')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 512.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 502.4 ms
+(  package {)59.5 482.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-mysql')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 472.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 462.4 ms
+(  package {)59.5 442.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-xml')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 432.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 422.4 ms
+(  package {)59.5 402.4 ms
+F1 sf
+0.498 0 0.498 r
+('php-zip')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 392.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 382.4 ms
+(})59.5 372.4 ms
+(class base::wputil_ghostscriptpackage {)59.5 352.4 ms
+(  package { )59.5 342.4 ms
+F1 sf
+0.498 0 0.498 r
+('ghostscript')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 332.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 322.4 ms
+(})59.5 312.4 ms
+(class base::wputil_mysqlpackage {)59.5 292.4 ms
+(  package {)59.5 282.4 ms
+F1 sf
+0.498 0 0.498 r
+('mysql-server')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 272.4 ms
+F1 sf
+0.498 0 0.498 r
+('present')s
+F0 sf
+0 g
+(  })59.5 262.4 ms
+(})59.5 252.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Download the wordpress installation into /tmp directory than copy over)59.5 232.4 ms
+(# into /srv/www per web site instructions.)59.5 222.4 ms
+(# You may want to clean up /tmp directory.)59.5 212.4 ms
+F0 sf
+0 g
+(class base::wputil_download_wp {)59.5 202.4 ms
+(  )59.5 182.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Make sure destination directory for wordpress is created.)s
+F0 sf
+0 g
+(  file { )59.5 172.4 ms
+F1 sf
+0.498 0 0.498 r
+('/srv/www')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 162.4 ms
+F1 sf
+0.498 0 0.498 r
+('directory')s
+F0 sf
+0 g
+(,)s
+(    owner => )59.5 152.4 ms
+F1 sf
+0.498 0 0.498 r
+('www-data')s
+F0 sf
+0 g
+(,)s
+(    group => )59.5 142.4 ms
+F1 sf
+0.498 0 0.498 r
+('www-data')s
+F0 sf
+0 g
+(  })59.5 132.4 ms
+(  )59.5 112.4 ms
+F1 sf
+0 0.498 0.498 r
+(# BEGIN)s
+F0 sf
+0 g
+(  )59.5 102.4 ms
+F1 sf
+0 0.498 0.498 r
+(# curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www)s
+F0 sf
+0 g
+(  )59.5 92.4 ms
+F1 sf
+0 0.498 0.498 r
+(# BEGIN)s
+F0 sf
+0 g
+(  )59.5 72.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Download the Wordpress bundle from puppet module server.)s
+F0 sf
+0 g
+(  )59.5 62.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Note: the File puppet command was having a checksum issue downloading from:)s
+F0 sf
+0 g
+(  )59.5 52.4 ms
+F1 sf
+0 0.498 0.498 r
+(# puppet:///modules/wordpress/latest.tar.gz so just used wget instead.)s
+re sp
+%%PageTrailer
+%%Page: 3 3
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(wordPressInstall.pp                                                           Page 3)59.5 792.4 ms
+F0 sf
+(  exec { )59.5 772.4 ms
+F1 sf
+0.498 0 0.498 r
+('wget')s
+F0 sf
+0 g
+(:)s
+(    cwd => )59.5 762.4 ms
+F1 sf
+0.498 0 0.498 r
+("/tmp")s
+F0 sf
+0 g
+(,)s
+(    command => )59.5 752.4 ms
+F1 sf
+0.498 0 0.498 r
+("wget https://wordpress.org/latest.tar.gz")s
+F0 sf
+0 g
+(,)s
+(    path => [)59.5 742.4 ms
+F1 sf
+0.498 0 0.498 r
+('/bin')s
+F0 sf
+0 g
+(],)s
+(  }~>)59.5 732.4 ms
+(  )59.5 722.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Ensure the file is downloaded.)s
+F0 sf
+0 g
+(  file { )59.5 712.4 ms
+F1 sf
+0.498 0 0.498 r
+('/tmp/latest.tar.gz')s
+F0 sf
+0 g
+(:)s
+(    ensure => file,)59.5 702.4 ms
+(    owner => )59.5 692.4 ms
+F1 sf
+0.498 0 0.498 r
+('www-data')s
+F0 sf
+0 g
+(,)s
+(    group => )59.5 682.4 ms
+F1 sf
+0.498 0 0.498 r
+('www-data')s
+F0 sf
+0 g
+(,)s
+(  }~>)59.5 672.4 ms
+(  )59.5 662.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Untar wordpress install file.)s
+F0 sf
+0 g
+(  exec { )59.5 652.4 ms
+F1 sf
+0.498 0 0.498 r
+('extract')s
+F0 sf
+0 g
+(:)s
+(    cwd => )59.5 642.4 ms
+F1 sf
+0.498 0 0.498 r
+("/tmp")s
+F0 sf
+0 g
+(,)s
+(    command => )59.5 632.4 ms
+F1 sf
+0.498 0 0.498 r
+("tar -xvzpf latest.tar.gz")s
+F0 sf
+0 g
+(,)s
+(    path => [)59.5 622.4 ms
+F1 sf
+0.498 0 0.498 r
+('/bin')s
+F0 sf
+0 g
+(],)s
+(    require => File[)59.5 612.4 ms
+F1 sf
+0.498 0 0.498 r
+('/tmp/latest.tar.gz')s
+F0 sf
+0 g
+(],)s
+(  })59.5 602.4 ms
+(  )59.5 582.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Bring in the wp-config.php file into the tmp/wordpress directory to be copied.)s
+F0 sf
+0 g
+(  file { )59.5 572.4 ms
+F1 sf
+0.498 0 0.498 r
+('/tmp/wordpress/wp-config.php')s
+F0 sf
+0 g
+(:)s
+(    content => template\()59.5 562.4 ms
+F1 sf
+0.498 0 0.498 r
+('/home/ubuntu/wordpress_configfiles/wp-config.php')s
+F0 sf
+0 g
+(\),)s
+(  })59.5 552.4 ms
+(  )59.5 532.4 ms
+F1 sf
+0 0.498 0.498 r
+(# This command copies to /srv/www)s
+F0 sf
+0 g
+(  )59.5 522.4 ms
+F1 sf
+0 0.498 0.498 r
+(# after the wordpress directory was untarred inside the /tmp directory.)s
+F0 sf
+0 g
+(  exec { )59.5 512.4 ms
+F1 sf
+0.498 0 0.498 r
+('cp -r /tmp/wordpress /srv/www/')s
+F0 sf
+0 g
+(:)s
+(    path => [)59.5 502.4 ms
+F1 sf
+0.498 0 0.498 r
+('/bin')s
+F0 sf
+0 g
+(],)s
+(    require => Exec[)59.5 492.4 ms
+F1 sf
+0.498 0 0.498 r
+('extract')s
+F0 sf
+0 g
+(])s
+(  }~>)59.5 482.4 ms
+(  exec { )59.5 472.4 ms
+F1 sf
+0.498 0 0.498 r
+('chown -R www-data:www-data /srv/www/wordpress')s
+F0 sf
+0 g
+(:)s
+(    path => [)59.5 462.4 ms
+F1 sf
+0.498 0 0.498 r
+('/bin')s
+F0 sf
+0 g
+(],)s
+(    require => Exec[)59.5 452.4 ms
+F1 sf
+0.498 0 0.498 r
+('cp -r /tmp/wordpress /srv/www/')s
+F0 sf
+0 g
+(],)s
+(  })59.5 442.4 ms
+(  )59.5 422.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Directory should be there with the correct ownership.)s
+F0 sf
+0 g
+(  file { )59.5 412.4 ms
+F1 sf
+0.498 0 0.498 r
+('/srv/www/wordpress')s
+F0 sf
+0 g
+(:)s
+(    ensure => )59.5 402.4 ms
+F1 sf
+0.498 0 0.498 r
+('directory')s
+F0 sf
+0 g
+(,)s
+(    owner => )59.5 392.4 ms
+F1 sf
+0.498 0 0.498 r
+('www-data')s
+F0 sf
+0 g
+(,)s
+(    group => )59.5 382.4 ms
+F1 sf
+0.498 0 0.498 r
+('www-data')s
+F0 sf
+0 g
+(,)s
+(    require => Exec[)59.5 372.4 ms
+F1 sf
+0.498 0 0.498 r
+('chown -R www-data:www-data /srv/www/wordpress')s
+F0 sf
+0 g
+(],)s
+(  })59.5 362.4 ms
+(  )59.5 342.4 ms
+F1 sf
+0 0.498 0.498 r
+(# END)s
+F0 sf
+0 g
+(  )59.5 332.4 ms
+F1 sf
+0 0.498 0.498 r
+(# curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www)s
+F0 sf
+0 g
+(  )59.5 322.4 ms
+F1 sf
+0 0.498 0.498 r
+(# END)s
+F0 sf
+0 g
+(})59.5 312.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Enable wordpress site, disable default "It Works" site.)59.5 292.4 ms
+(# A call will be made to 'apache2' service from base::wputil_apachestart.)59.5 282.4 ms
+(# If you want, verify site enabled: apache2ctl -S)59.5 272.4 ms
+F0 sf
+0 g
+(class base::wputil_enable_apacheweb {)59.5 262.4 ms
+(  )59.5 252.4 ms
+F1 sf
+0 0.498 0.498 r
+(#Note that changing wordpress.conf will trigger this section including)s
+F0 sf
+0 g
+(  )59.5 242.4 ms
+F1 sf
+0 0.498 0.498 r
+(#resetting mysql password.)s
+F0 sf
+0 g
+(  file { )59.5 232.4 ms
+F1 sf
+0.498 0 0.498 r
+('/etc/apache2/sites-available/wordpress.conf')s
+F0 sf
+0 g
+(:)s
+(    content => template\()59.5 222.4 ms
+F1 sf
+0.498 0 0.498 r
+('/home/ubuntu/wordpress_configfiles/wordpress.conf')s
+F0 sf
+0 g
+(\),)s
+(  }~>)59.5 212.4 ms
+(  exec { )59.5 202.4 ms
+F1 sf
+0.498 0 0.498 r
+('enable vhost file')s
+F0 sf
+0 g
+(:)s
+(    command => )59.5 192.4 ms
+F1 sf
+0.498 0 0.498 r
+('/usr/sbin/a2ensite wordpress.conf')s
+F0 sf
+0 g
+(,)s
+(    refreshonly => true,)59.5 182.4 ms
+(    )59.5 172.4 ms
+F1 sf
+0 0.498 0.498 r
+(#path => ['/usr/sbin'],)s
+F0 sf
+0 g
+(    require => File[)59.5 162.4 ms
+F1 sf
+0.498 0 0.498 r
+('/etc/apache2/sites-available/wordpress.conf')s
+F0 sf
+0 g
+(],)s
+(  }~>)59.5 152.4 ms
+(  exec { )59.5 142.4 ms
+F1 sf
+0.498 0 0.498 r
+('disable "It Works" site')s
+F0 sf
+0 g
+(:)s
+(    command => )59.5 132.4 ms
+F1 sf
+0.498 0 0.498 r
+('/usr/sbin/a2dissite 000-default')s
+F0 sf
+0 g
+(,)s
+(    refreshonly => true,)59.5 122.4 ms
+(    notify => Service[)59.5 112.4 ms
+F1 sf
+0.498 0 0.498 r
+('apache2')s
+F0 sf
+0 g
+(],)s
+(    require => File[)59.5 102.4 ms
+F1 sf
+0.498 0 0.498 r
+('/etc/apache2/sites-available/wordpress.conf')s
+F0 sf
+0 g
+(],)s
+(  }~>)59.5 92.4 ms
+(  )59.5 82.4 ms
+F1 sf
+0 0.498 0.498 r
+(#Changes mysql password.)s
+F0 sf
+0 g
+(  )59.5 72.4 ms
+F1 sf
+0 0.498 0.498 r
+(#Note: This command is intentionally placed here as to not run this after)s
+F0 sf
+0 g
+(  )59.5 62.4 ms
+F1 sf
+0 0.498 0.498 r
+(#wordpress site is already set up in browser!)s
+F0 sf
+0 g
+(  exec { )59.5 52.4 ms
+F1 sf
+0.498 0 0.498 r
+('set mysql root password')s
+F0 sf
+0 g
+(:)s
+re sp
+%%PageTrailer
+%%Page: 4 4
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(wordPressInstall.pp                                                           Page 4)59.5 792.4 ms
+F0 sf
+(    command => )59.5 772.4 ms
+F1 sf
+0.498 0 0.498 r
+('mysqladmin -u root password $base::wputil_configvars::mysql_password)s
+(')59.5 762.4 ms
+F0 sf
+0 g
+(,)s
+(    path => [)59.5 752.4 ms
+F1 sf
+0.498 0 0.498 r
+('/bin')s
+F0 sf
+0 g
+(],)s
+(    require => Package[)59.5 742.4 ms
+F1 sf
+0.498 0 0.498 r
+('mysql-server')s
+F0 sf
+0 g
+(],)s
+(  })59.5 732.4 ms
+(})59.5 712.4 ms
+F1 sf
+0 0.498 0.498 r
+(# MySQL setup for wordpress site.)59.5 692.4 ms
+(# Requires package mysql-server is installed from base::wputil_mysqlpackage.)59.5 682.4 ms
+(# Warning: Clear text password is used. Scrub when done. It's on you if you don't.)59.5 672.4 ms
+(#          Also, clean up root directory. It's on you if you don't.)59.5 662.4 ms
+F0 sf
+0 g
+(class base::wputil_mysqlconfiguration {)59.5 652.4 ms
+(  file { )59.5 632.4 ms
+F1 sf
+0.498 0 0.498 r
+('/root/wordpressMySQL.sql')s
+F0 sf
+0 g
+(:)s
+(    content => template\()59.5 622.4 ms
+F1 sf
+0.498 0 0.498 r
+('/home/ubuntu/wordpress_configfiles/wordpressMySQL.sql')s
+F0 sf
+0 g
+(\),)s
+(  }~>)59.5 612.4 ms
+(  )59.5 602.4 ms
+F1 sf
+0 0.498 0.498 r
+(#execute database script)s
+F0 sf
+0 g
+(  exec { )59.5 592.4 ms
+F1 sf
+0.498 0 0.498 r
+('mysql database')s
+F0 sf
+0 g
+(:)s
+(    command => )59.5 582.4 ms
+F1 sf
+0.498 0 0.498 r
+('mysql -u root -p$base::wputil_configvars::mysql_password -h localhos)s
+(t < /root/wordpressMySQL.sql')59.5 572.4 ms
+F0 sf
+0 g
+(,)s
+(    path => [)59.5 562.4 ms
+F1 sf
+0.498 0 0.498 r
+('/bin')s
+F0 sf
+0 g
+(],)s
+(    )59.5 552.4 ms
+F1 sf
+0 0.498 0.498 r
+(#Note:)s
+F0 sf
+0 g
+(    )59.5 542.4 ms
+F1 sf
+0 0.498 0.498 r
+(#Returns [1] quiets the output - In the event this exec is run more than once du)s
+(e to interval,)59.5 532.4 ms
+F0 sf
+0 g
+(    )59.5 522.4 ms
+F1 sf
+0 0.498 0.498 r
+(#create database sql will create error.)s
+F0 sf
+0 g
+(    )59.5 512.4 ms
+F1 sf
+0 0.498 0.498 r
+(#Thus, the sql will back out and not overwrite any changes in the DB.)s
+F0 sf
+0 g
+(    )59.5 502.4 ms
+F1 sf
+0 0.498 0.498 r
+(#Not elegant but proven not to interfere with site if run more than once.)s
+F0 sf
+0 g
+(    returns => [0,1],)59.5 492.4 ms
+(  })59.5 482.4 ms
+(  )59.5 462.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Finally, enable mysql for the wordpress site to start working)s
+F0 sf
+0 g
+(  service {)59.5 452.4 ms
+F1 sf
+0.498 0 0.498 r
+('mysql')s
+F0 sf
+0 g
+( :)s
+(    ensure => )59.5 442.4 ms
+F1 sf
+0.498 0 0.498 r
+('running')s
+F0 sf
+0 g
+(,)s
+(    enable => )59.5 432.4 ms
+F1 sf
+0.498 0 0.498 r
+('true')s
+F0 sf
+0 g
+(  })59.5 422.4 ms
+(})59.5 412.4 ms
+(class base::wputil_install_mysql {)59.5 392.4 ms
+(  include base::apache_running, base::wputil_webpackage, base::wputil_ghostscriptpac)59.5 382.4 ms
+(kage, base::wputil_mysqlpackage)59.5 372.4 ms
+(  include base::wputil_enable_apacheweb, base::wputil_download_wp, base::wputil_mysq)59.5 362.4 ms
+(lconfiguration)59.5 352.4 ms
+(})59.5 342.4 ms
+F1 sf
+0 0.498 0.498 r
+(################# NODES #################)59.5 322.4 ms
+F0 sf
+0 g
+(node  )59.5 302.4 ms
+F1 sf
+0.498 0 0.498 r
+('default')s
+F0 sf
+0 g
+( {)s
+(})59.5 292.4 ms
+F1 sf
+0 0.498 0.498 r
+(# Edit the nodes that need WordPress installation here.)59.5 272.4 ms
+F0 sf
+0 g
+(node )59.5 262.4 ms
+F1 sf
+0.498 0 0.498 r
+('client1.ec2.internal')s
+F0 sf
+0 g
+( {)s
+(  include base::wputil_install_mysql)59.5 252.4 ms
+(})59.5 242.4 ms
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 4
+%%EOF
+
